@@ -1,1 +1,9 @@
-<div>{{house}}</div>
+<h2>{{ house.address }} Details</h2>
+<div><span>Id: </span>{{house.id}}</div>
+<div>
+    <label>
+        Address:
+        <input [(ngModel)]="house.address" placeholder="address">
+    </label>
+</div>
+<div><span>Price: </span>{{house.price}}</div>
