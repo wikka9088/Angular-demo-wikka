@@ -1,6 +1,7 @@
 .house-item {
+    width: 470px;
     border: 1px #cccccc dashed;
-    margin: 20px auto;
+    margin: 20px;
     padding: 10px 20px;
     display: inline-block;
 }

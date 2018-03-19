@@ -1,11 +1,14 @@
-<div class="house-item">
-    <h2>{{ house.address }} Details</h2>
-    <div><span>Id: </span>{{house.id}}</div>
-    <div>
-        <label>
-            Address:
-            <input [(ngModel)]="house.address" placeholder="address">
-        </label>
-    </div>
-    <div><span>Price: </span>{{house.price}}</div>
-</div>
+<h2>My Heroes</h2>
+<ul class="heroes">
+    <li class="house-item" *ngFor="let house of houses">
+        <h2>{{ house.address }}</h2>
+        <div><span>Id: </span>{{house.id}}</div>
+        <div>
+            <label>
+                Address:
+                <input [(ngModel)]="house.address" placeholder="address">
+            </label>
+        </div>
+        <div><span>Price: </span>{{house.price}}</div>
+    </li>
+</ul>
