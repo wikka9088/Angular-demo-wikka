@@ -13,15 +13,4 @@
     </li>
 </ul>
 
-<h2>Detail:</h2>
-<div class="house-item" *ngIf="selectedHouse">
-    <h2>{{ selectedHouse.address }}</h2>
-    <div><span>Id: </span>{{selectedHouse.id}}</div>
-    <div>
-        <label>
-            Address:
-            <input [(ngModel)]="selectedHouse.address" placeholder="address">
-        </label>
-    </div>
-    <div><span>Price: </span>{{selectedHouse.price}}</div>
-</div>
+<app-house-detail [house]="selectedHouse"></app-house-detail>
