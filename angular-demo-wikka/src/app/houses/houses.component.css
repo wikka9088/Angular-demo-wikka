@@ -5,3 +5,6 @@
     padding: 10px 20px;
     display: inline-block;
 }
+.house-item.selected {
+    border: 1px darkred dashed;
+}

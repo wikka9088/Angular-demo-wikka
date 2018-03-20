@@ -5,7 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HousesComponent } from './houses/houses.component';
 
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { HouseDetailComponent } from './house-detail/house-detail.component'; // <-- NgModel lives here
 
 
 
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 @NgModule({
   declarations: [
     AppComponent,
-    HousesComponent
+    HousesComponent,
+    HouseDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
-    <li class="house-item" *ngFor="let house of houses">
-        <h2>{{ house.address }}</h2>
+    <li class="house-item" *ngFor="let house of houses" [class.selected] = 'house === selectedHouse'>
+        <h2 (click)="onSelect(house)">{{ house.address }}</h2>
         <div><span>Id: </span>{{house.id}}</div>
         <div>
             <label>
@@ -12,3 +12,16 @@
         <div><span>Price: </span>{{house.price}}</div>
     </li>
 </ul>
+
+<h2>Detail:</h2>
+<div class="house-item" *ngIf="selectedHouse">
+    <h2>{{ selectedHouse.address }}</h2>
+    <div><span>Id: </span>{{selectedHouse.id}}</div>
+    <div>
+        <label>
+            Address:
+            <input [(ngModel)]="selectedHouse.address" placeholder="address">
+        </label>
+    </div>
+    <div><span>Price: </span>{{selectedHouse.price}}</div>
+</div>
