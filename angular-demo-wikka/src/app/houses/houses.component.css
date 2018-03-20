@@ -7,4 +7,5 @@
 }
 .house-item.selected {
     border: 1px darkred dashed;
+    background-color: #eee;
 }
