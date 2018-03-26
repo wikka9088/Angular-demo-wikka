@@ -23,7 +23,7 @@ import {HouseService} from "./house.service"; // <-- NgModel lives here
     FormsModule,
   ],
   providers: [
-      HouseService, //tells Angular to create a single, shared instance of HeroService and inject into any class that asks for it.
+      HouseService, //tells Angular to create a single, shared instance of HouseService and inject into any class that asks for it.
   ],
   bootstrap: [AppComponent]
 })
