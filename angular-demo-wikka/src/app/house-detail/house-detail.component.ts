@@ -1,5 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {House} from "../house";
+import {HOUSES} from "../../mock-data/mock-houses";
 
 @Component({
   selector: 'app-house-detail',
@@ -14,6 +15,10 @@ export class HouseDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getHouses() : House[] {
+      return HOUSES;
   }
 
 }
