@@ -26,8 +26,9 @@ import { MessagesService } from './messages.service'; // <-- NgModel lives here
     FormsModule,
   ],
   providers: [
+      //tells Angular to create a single, shared instance of HouseService and inject into any class that asks for it.
       HouseService,
-      MessagesService, //tells Angular to create a single, shared instance of HouseService and inject into any class that asks for it.
+      MessagesService,
   ],
   bootstrap: [AppComponent]
 })
