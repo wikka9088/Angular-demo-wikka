@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
 import {HouseService} from "./house.service";
 import { MessagesComponent } from './messages/messages.component';
-import { MessagesService } from './messages.service'; // <-- NgModel lives here
+import { MessagesService } from './messages.service';
+import { AppRoutingModule } from './/app-routing.module'; // <-- NgModel lives here
 
 
 
@@ -24,6 +25,7 @@ import { MessagesService } from './messages.service'; // <-- NgModel lives here
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [
       //tells Angular to create a single, shared instance of HouseService and inject into any class that asks for it.
