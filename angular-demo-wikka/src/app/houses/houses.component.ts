@@ -12,13 +12,6 @@ export class HousesComponent implements OnInit {
 
   houses: House[];
 
-  selectedHouse: House;
-
-  onSelect(house: House): void
-  {
-    this.selectedHouse = house;
-  }
-
   //When Angular creates a HousesComponent, the Dependency Injection system sets the houseService parameter to the singleton instance of HouseService.
   constructor(private houseService: HouseService) { }
 
