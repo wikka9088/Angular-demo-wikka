@@ -1,3 +1,8 @@
+.houses-list {
+    /*scroll only content div, other body should fixed*/
+    overflow: auto;
+    height: 500px;
+}
 .house-item {
     width: 470px;
     border: 1px #cccccc dashed;
