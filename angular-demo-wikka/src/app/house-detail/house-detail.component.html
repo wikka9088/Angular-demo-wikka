@@ -2,14 +2,20 @@
   <h2>Detail:</h2>
   <div class="house-item" *ngIf="house">
     <h2>{{ house.address }}</h2>
-    <div><span>Id: </span>{{house.id}}</div>
-    <div>
-      <label>
-        Address:
-        <input [(ngModel)]="house.address" placeholder="address">
-      </label>
-    </div>
-    <div><span>Price: </span>{{house.price}}</div>
+    <tr>
+      <td>Id: </td>
+      <td>{{house.id}}</td>
+    </tr>
+    <tr>
+      <td>Address: </td>
+      <td><input [(ngModel)]="house.address" placeholder="address"></td>
+    </tr>
+    <tr>
+      <td>Price: </td>
+      <td>$ {{house.price}}</td>
+      <td><input [(ngModel)]="house.price" placeholder="price"/></td>
+    </tr>
+
   </div>
   <button (click)="goBack()">go back</button>
 </div>
