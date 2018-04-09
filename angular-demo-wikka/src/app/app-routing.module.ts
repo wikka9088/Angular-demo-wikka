@@ -4,13 +4,15 @@ import {RouterModule, Routes} from "@angular/router";
 import {HousesComponent} from "./houses/houses.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {HouseDetailComponent} from "./house-detail/house-detail.component";
+import {HouseEditorComponent} from "./house-editor/house-editor.component";
 
 
 const routes: Routes = [
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {path: 'houses', component: HousesComponent},
     {path: 'dashboard', component: DashboardComponent},
-    {path: 'detail/:id', component: HouseDetailComponent}
+    {path: 'detail/:id', component: HouseDetailComponent},
+    {path: 'edit/:id', component: HouseEditorComponent}
 ];
 
 @NgModule({

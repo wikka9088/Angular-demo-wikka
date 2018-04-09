@@ -1,3 +1,21 @@
-<p>
-  house-editor works!
-</p>
+<div class="house-detail-wrapper">
+  <h2>House Detail Editor:</h2>
+  <div class="house-item" *ngIf="house">
+    <h2>{{ house.address }}</h2>
+    <tr>
+      <td>Id: </td>
+      <td>{{house.id}}</td>
+    </tr>
+    <tr>
+      <td>Address: </td>
+      <td><input [(ngModel)]="house.address" placeholder="address"></td>
+    </tr>
+    <tr>
+      <td>Price: </td>
+      <td><input [(ngModel)]="house.price" placeholder="price"/></td>
+    </tr>
+
+  </div>
+  <button (click)="saveDetail()">Save</button>
+  <button (click)="goBack()">Back</button>
+</div>

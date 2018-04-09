@@ -1,5 +1,5 @@
 <div class="house-detail-wrapper">
-  <h2>Detail:</h2>
+  <h2>House Detail:</h2>
   <div class="house-item" *ngIf="house">
     <h2>{{ house.address }}</h2>
     <tr>
@@ -8,14 +8,14 @@
     </tr>
     <tr>
       <td>Address: </td>
-      <td><input [(ngModel)]="house.address" placeholder="address"></td>
+      <td>{{house.address}}</td>
     </tr>
     <tr>
       <td>Price: </td>
       <td>$ {{house.price}}</td>
-      <td><input [(ngModel)]="house.price" placeholder="price"/></td>
     </tr>
 
   </div>
-  <button (click)="goBack()">go back</button>
+  <button routerLink="/edit/{{house.id}}">Edit</button>
+  <button (click)="goBack()">Back</button>
 </div>
