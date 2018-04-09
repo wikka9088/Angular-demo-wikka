@@ -11,7 +11,8 @@ import {HouseService} from "./house.service";
 import { MessagesComponent } from './messages/messages.component';
 import { MessagesService } from './messages.service';
 import { AppRoutingModule } from './/app-routing.module';
-import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HouseEditorComponent } from './house-editor/house-editor.component'; // <-- NgModel lives here
 
 
 
@@ -22,7 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgM
     HousesComponent,
     HouseDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HouseEditorComponent
   ],
   imports: [
     BrowserModule,
